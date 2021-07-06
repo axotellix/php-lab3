@@ -1,0 +1,49 @@
+
+// [ MEDIA QUERIES: main ]
+
+//>> DESKTOP
+@media screen and (max-width: $bg) {
+    // [ main: card ]
+    ul li.card {
+        div.card-img {
+            width: 140px !important; height: 140px !important;
+        }
+    }
+    span.card-number {
+        font-size: 9rem !important;
+    }
+}
+
+@media screen and (max-width: $md) {
+    /// [ main: card ]
+    ul li.card {
+        div.card-img {
+            width: 130px !important; height: 130px !important;
+        }
+    }
+    span.card-number {
+        font-size: 8rem !important;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    // [ main: card ]
+    ul li.card {
+        div.card-img {
+            width: 120px !important; height: 120px !important;
+        }
+    }
+    span.card-number {
+        font-size: 7rem !important;
+    }
+}
+
+//>> TABLET
+@media screen and (min-width: $mb) and (max-width: $sm) {
+    
+}
+
+//>> MOBILE
+@media screen and (max-width: $mb) {
+    
+}

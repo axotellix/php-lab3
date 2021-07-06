@@ -1,0 +1,26 @@
+
+<svg width="0" height="0" class="hidden">
+
+<!-- [ icon: menu ] -->
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" id="ico-menu">
+    <title>ico-menu</title>
+    <circle cx="3" cy="3" r="3"  ></circle>
+    <circle cx="21" cy="3" r="3" ></circle>
+    <circle cx="39" cy="3" r="3" ></circle>
+    <circle cx="3" cy="21" r="3" ></circle>
+    <circle cx="21" cy="21" r="3"></circle>
+    <circle cx="39" cy="21" r="3"></circle>
+    <circle cx="3" cy="39" r="3" ></circle>
+    <circle cx="21" cy="39" r="3"></circle>
+    <circle cx="39" cy="39" r="3"></circle>
+  </symbol>
+
+
+<!-- [ icon: enter ] -->
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.42 24.8" id="ico-enter">
+    <title>ico-enter</title>
+    <ellipse cx="11.69" cy="6.6" rx="6.42" ry="6.6"></ellipse>
+    <path d="M20.37 24.85H3.01a3.16 3.16 0 01-1.85-5.61 16.69 16.69 0 0110.53-3.39 16.56 16.56 0 0110.68 3.5 3.14 3.14 0 01-2 5.5z"></path>
+  </symbol>
+  
+</svg>

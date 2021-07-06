@@ -1,0 +1,46 @@
+
+// [ MEDIA QUERIES: navbar ]
+
+//>> DESKTOP
+@media screen and (max-width: $bg) {
+    nav {
+        height: 45px;
+
+        ul li.navlink, button.enter { height: 28px; font-size: 1.4rem; padding: 0 13px; }
+        button.menu {
+            width: 35px; height: 35px;
+        }
+        button.enter svg.icon { 
+            width: 13px; height: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    nav {
+        height: 40px;
+
+        ul li.navlink, button.enter { height: 23px; font-size: 1.4rem; padding: 0 11px; }
+        button.menu {
+            width: 30px; height: 30px;
+        }
+        button.enter svg.icon { 
+            width: 11px; height: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    // [ header: background image ]
+    
+}
+
+//>> TABLET
+@media screen and (min-width: $mb) and (max-width: $sm) {
+    
+}
+
+//>> MOBILE
+@media screen and (max-width: $mb) {
+    
+}

@@ -1,0 +1,14 @@
+
+//: hover effect
+%grey-hover { 
+    height: 32px; 
+    padding: 0px 15px;
+    transition: background 0.25s, color 0.25s;
+    @include border-radius(5px);
+    @include flex-align;
+
+    &:hover {
+        background: lighten($grey, 5%);
+        color: lighten($d-white, 10%); 
+    }
+}

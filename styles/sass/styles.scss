@@ -1,0 +1,33 @@
+
+// [ PRESETS ]
+@import '_variables';
+@import '_mixins';
+@import '_%template-selectors';
+
+
+
+// [ PAGE PARTS ]
+@import 'sections/_[ general ]';
+@import 'sections/_[ navbar ]';
+@import 'sections/_[ main ]';
+@import 'sections/_[ footer ]';
+
+
+// [ MEDIA QUERIES ]
+@import 'media/_@general';
+@import 'media/_@navbar';
+@import 'media/_@header';
+@import 'media/_@main';
+
+
+// [ JUNK ]
+@import 'temp';
+
+
+
+
+
+
+
+
+

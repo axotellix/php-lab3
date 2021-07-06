@@ -1,0 +1,59 @@
+
+form {
+    width: 22vw;
+
+    &.form-wide { width: 40vw; }
+
+    &.form-light { 
+        input { 
+            outline: 1px solid $d-white;
+            color: $grey;
+
+            &:not([type = 'submit']):hover {
+                outline: 1px solid darken($d-white, 10%);
+            }
+        }
+        input[type = 'submit'] { background: $d-white; }
+    }
+    &.form-dark { 
+        input { 
+            outline: 1px solid lighten($grey, 5%);
+            color: $d-white;
+
+            &:not([type = 'submit']):hover {
+                outline: 1px solid lighten($grey, 15%);
+            }
+        }
+        input[type = 'submit'] { background: lighten($grey, 5%) }
+    }
+
+    input { 
+        display: block;
+        width: 100%; height: 1.7vh;
+        padding: 20px;
+        font-size: 1.3rem;
+        background: transparent;;
+        transition: all 0.25s;
+    
+        &:not(:first-of-type) { margin-top: 10px; }
+    
+        &:not([type = 'submit']):focus {
+            outline: 2px solid $green;
+        }
+        &:not([type = 'submit']):focus:hover {
+            outline: 2px solid $green;
+        }
+        &[type = 'submit']                   { font-weight: $f-bold; margin-top: 1.15em; transition: background 0.25s; padding: 14px 20px 26px 20px; }
+        &[type = 'submit'][enabled = 'true'] { cursor: pointer; background: $green; color: $white; }
+        &[type = 'submit'][enabled = 'true']:hover { 
+            background: lighten($green, 5%); 
+        }
+    }
+
+    textarea {
+        @extend input;
+        height: 300px;
+        resize: none;
+        margin-top: 10px !important;
+    }
+}

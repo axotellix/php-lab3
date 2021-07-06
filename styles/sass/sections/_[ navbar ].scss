@@ -1,0 +1,49 @@
+
+// [ NAVBAR ]
+nav {
+    background: $grey;
+    width: 100%; height: 50px;
+    padding: 0 30px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include align(left, top, sticky); 
+
+    h1.logo { 
+        @include align;
+        color: $green;
+        margin: 0;
+    }
+
+    ul { 
+        @include flex-align;
+
+        li.navlink { 
+            margin: 0 5px;
+            font-size: 1.5rem;
+            @extend %grey-hover;
+
+            a { color: darken($d-white, 10%); }
+            &[active] a { color: $white; }
+        }
+    }
+
+    button.menu, button.enter {
+        width: 40px; height: 40px;
+        background: transparent;
+        cursor: pointer;
+
+        svg.icon { fill: $green; transition: fill 0.25s; }
+        &:hover svg.icon { fill: $orange; }
+    }
+    button.enter { 
+        width: auto; height: 32px; 
+        color: darken($d-white, 30%);
+        font-size: 1.5rem;
+        @extend %grey-hover;
+
+        svg.icon { width: 14px; height: 14px; margin-right: 10px; fill: darken($d-white, 30%); }
+        &:hover svg.icon { fill: lighten($d-white, 10%); }
+    }
+}

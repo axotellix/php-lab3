@@ -1,0 +1,19 @@
+
+// [ MEDIA QUERIES: general ]
+@media screen and (max-width: $md) {
+    $f-size: 9px;
+
+    html { font-size: $f-size; }
+}
+
+@media screen and (max-width: $sm) {
+    $f-size: 8px;
+
+    html { font-size: $f-size; }
+}
+
+@media screen and (max-width: $mb) {
+    $f-size: 7px;
+
+    html { font-size: $f-size; }
+}

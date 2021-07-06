@@ -1,0 +1,53 @@
+
+section.input-field {
+
+    ul {
+        width: 550px;
+        background: $grey;
+        padding: 20px;
+        @include mg-center;
+        @include flex-align;
+        flex-wrap: wrap;
+
+        li.input-digit, li.input-clear {
+            flex: 1 0 80px;
+            min-width: 80px;
+            padding: 30px 20px;
+            margin: 5px;
+            background: lighten($grey, 5%);
+            cursor: pointer;
+            transition: background 0.25s;
+            position: relative;
+
+            a { 
+                display: block; 
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                text-align: center;
+                font-size: 1.5rem; 
+                font-weight: $f-bold; 
+                color: $d-white; 
+                @include flex-align;
+            }
+        }
+        li.input-digit:hover {
+            background: lighten($grey, 10%);
+        }
+        li.input-clear {
+            background: $orange;
+            flex-basis: calc(100% - 10px);
+
+            &:hover { background: lighten($orange, 5%); }
+        }
+        li.output-field {
+            flex-basis: calc(100% - 10px);
+            background: $d-white;
+            color: $grey;
+            font-size: 1.5rem;
+            font-weight: $f-bold;
+            padding: 20px;
+            margin: 5px 5px 10px 5px;
+        }
+    }
+
+}

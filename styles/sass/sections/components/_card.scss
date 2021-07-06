@@ -1,0 +1,50 @@
+
+ul.cards { @include flex-align; }
+    
+ul li.card {
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: 300px; min-width: 200px;
+    max-height: 400px; min-height: 267px;
+    height: 35vw;
+    background: $white;
+    margin: 10px;
+    padding: 30px;
+    z-index: 0;
+
+    // card: image
+    div.card-img {
+        width: 150px; height: 150px;
+        overflow: hidden;
+        @include border-radius(200px);
+        @include mg-center;
+        @include flex-align;
+
+        * { @include flex-align; }
+        svg.picture { height: 80%; }
+    }
+
+    // card: heading
+    h3.card-heading {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1.1em;;
+    }
+    // card: text
+    p.card-text {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    // card: number
+    span.card-number {
+        font-size: 10rem;
+        font-weight: $f-black;
+        color: $d-white;
+        user-select: none;
+        opacity: .8;
+        @include align(right, bottom, absolute, 10px, -10px);
+        z-index: -1;
+    }
+}

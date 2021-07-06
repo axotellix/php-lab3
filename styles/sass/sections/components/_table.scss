@@ -1,0 +1,51 @@
+
+table {
+    $caption-offset: 40px;
+
+    width: 50%; min-width: 300px;
+    position: relative;
+    border-collapse: collapse;
+    @include mg-center(50px + $caption-offset);
+    display: table;
+
+    &::before {
+        content: attr(t-caption);
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: $f-bold;
+        color: $green;
+        @include align(left, top, absolute, 0, -$caption-offset);
+    }
+
+    tr {
+        td {
+            border: 2px solid $d-white;
+            padding: 10px 20px;
+            font-size: 1.6rem;
+            color: $d-white;
+            text-align: center;
+        }
+    }
+
+    &.col2 tr td { width: 50%;      }
+    &.col3 tr td { width: 33.33%;   }
+    &.col4 tr td { width: 25%;      }
+
+    &.table-light td { color: $d-white; border-color: $d-white; }
+    &.table-dark  td { color: $grey; border-color: $grey;       }
+    &.description {
+        margin: 0;
+
+        tr td {
+            width: auto;
+            text-align: left;
+            font-size: 1.5rem;
+            border: none;
+            padding: 0;
+
+            &.break-text { padding: 10px 0; }
+        }
+    }
+    
+}

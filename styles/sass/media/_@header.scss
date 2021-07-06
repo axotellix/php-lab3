@@ -1,0 +1,83 @@
+
+// [ MEDIA QUERIES: header ]
+
+//>> DESKTOP
+@media screen and (max-width: $bg) {
+    // [ header: form ]
+    div.header-form {
+        h1.header-title { 
+            margin-bottom: 0.9em; 
+            font-size: 3.2rem;
+
+            span {
+                font-size: 1.3rem;
+            }
+        }
+
+        input {
+            height: 1.6vh;
+            padding: 15px;
+
+            &[type = 'submit'] { padding: 14px 20px 26px 20px; }
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    // [ header: form ]
+    div.header-form {
+        h1.header-title { 
+            margin-bottom: 0.8em; 
+            font-size: 3rem;
+
+            span {
+                font-size: 1.2rem;
+            }
+        }
+
+        input {
+            height: 1.6vh;
+            padding: 15px;
+
+            &[type = 'submit'] { padding: 14px 20px 26px 20px; }
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    // [ header: background image ]
+    div.header-back {
+        svg.picture {
+            min-height: 70%;
+            margin-top: -10px;
+        }
+    }
+    // [ header: form ]
+    div.header-form {
+        h1.header-title { 
+            margin-bottom: 0.5em; 
+            font-size: 3.5rem;
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+
+        input {
+            height: 1vh;
+            padding: 10px;
+
+            &[type = 'submit'] { padding: 6px 10px 14px 10px; }
+        }
+    }
+}
+
+//>> TABLET
+@media screen and (min-width: $mb) and (max-width: $sm) {
+    
+}
+
+//>> MOBILE
+@media screen and (max-width: $mb) {
+    
+}
